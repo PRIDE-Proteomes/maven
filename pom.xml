@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>uk.ac.ebi.pride.proteomes</groupId>
+    <artifactId>proteomes-build</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>PRIDE Proteomes Build</name>
+
+    <description>Modules to centralize common resources and configuration for PRIDE Proteomes Maven builds</description>
+    <url>https://github.com/PRIDE-Proteomes/proteomes-build</url>
+
+    <modules>
+        <module>parent</module>
+    </modules>
+
+    <developers>
+        <developer>
+            <name>PRIDE Developer</name>
+            <id>pride-support@ebi.ac.uk</id>
+            <email>pride-support@ebi.ac.uk</email>
+            <organization>Proteomics Services Team, EMBL - European Bioinformatics Institute</organization>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <!--scm git config-->
+    <scm>
+        <connection>scm:git:github.com/PRIDE-Proteomes/proteomes-build.git</connection>
+        <developerConnection>scm:git:git@github.com:PRIDE-Proteomes/proteomes-build.git</developerConnection>
+        <url>https://github.com/PRIDE-Proteomes/proteomes-build.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
+</project>
