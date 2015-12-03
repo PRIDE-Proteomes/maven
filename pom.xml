@@ -31,6 +31,11 @@
         </license>
     </licenses>
 
+    <organization>
+        <name>EMBL - European Bioinformatics Institute</name>
+        <url>http://www.ebi.ac.uk</url>
+    </organization>
+
     <!--scm git config-->
     <scm>
         <connection>scm:git:github.com/PRIDE-Proteomes/maven.git</connection>
@@ -40,15 +45,13 @@
     </scm>
 
     <build>
+        <finalName>proteomes-${project.artifactId}-{project.version}</finalName>
         <pluginManagement>
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>2.6</version>
-                    <configuration>
-                        <finalName>proteomes-${artifactId}</finalName>
-                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -97,8 +100,10 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>2.18.1</version>
                     <configuration>
-                        <parallel>methods</parallel>
-                        <threadCount>10</threadCount>
+                        <!-- The parallel method create problems in the db-core test-->
+                        <!-- Investigate -->
+                        <!--<parallel>methods</parallel>-->
+                        <!--<threadCount>10</threadCount>-->
                         <!-- Show the test errors on console -->
                         <useFile>false</useFile>
                         <printSummary>false</printSummary>
