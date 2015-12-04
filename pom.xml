@@ -38,14 +38,13 @@
 
     <!--scm git config-->
     <scm>
-        <connection>scm:git:github.com/PRIDE-Proteomes/maven.git</connection>
-        <developerConnection>scm:git:git@github.com:PRIDE-Proteomes/maven.git</developerConnection>
-        <url>https://github.com/PRIDE-Proteomes/maven.git</url>
+        <connection>scm:git:github.com/PRIDE-Proteomes/maven-build.git</connection>
+        <developerConnection>scm:git:git@github.com:PRIDE-Proteomes/maven-build.git</developerConnection>
+        <url>https://github.com/PRIDE-Proteomes/maven-build.git</url>
         <tag>HEAD</tag>
     </scm>
 
     <build>
-        <finalName>proteomes-${project.artifactId}-${project.version}</finalName>
         <pluginManagement>
             <plugins>
                 <plugin>
