@@ -4,15 +4,15 @@
 
     <parent>
         <groupId>uk.ac.ebi.pride.proteomes.maven</groupId>
-        <artifactId>build</artifactId>
-        <version>1.0.3-SNAPSHOT</version>
+        <artifactId>proteomes-maven-build</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>parent</artifactId>
+    <artifactId>proteomes-maven-parent</artifactId>
     <packaging>pom</packaging>
-    <name>PRIDE Proteomes Parent</name>
 
+    <name>PRIDE Proteomes Parent</name>
     <description>Parent pom for all PRIDE Proteomes related project</description>
 
     <developers>
@@ -31,6 +31,11 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <organization>
+        <name>EMBL - European Bioinformatics Institute</name>
+        <url>http://www.ebi.ac.uk</url>
+    </organization>
 
     <properties>
         <!-- UTF-8 encoding to generate the build-->
