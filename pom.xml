@@ -4,7 +4,7 @@
     <groupId>uk.ac.ebi.pride.proteomes.maven</groupId>
     <artifactId>proteomes-maven-build</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>PRIDE Proteomes Build</name>
 
     <description>Modules to centralize common resources and configuration for PRIDE Proteomes Maven builds</description>
@@ -41,7 +41,7 @@
         <connection>scm:git:github.com/PRIDE-Proteomes/maven-build.git</connection>
         <developerConnection>scm:git:git@github.com:PRIDE-Proteomes/maven-build.git</developerConnection>
         <url>https://github.com/PRIDE-Proteomes/maven-build.git</url>
-        <tag>HEAD</tag>
+        <tag>proteomes-maven-build-1.0.0</tag>
     </scm>
 
     <build>
