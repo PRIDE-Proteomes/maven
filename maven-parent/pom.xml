@@ -42,18 +42,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
 
         <!--spring batch-->
-        <spring.batch.version>2.2.7.RELEASE</spring.batch.version>
+        <spring.batch.version>3.0.6.RELEASE</spring.batch.version>
 
         <!--spring-->
-        <spring.version>4.1.7.RELEASE</spring.version>
+        <spring.version>4.2.5.RELEASE</spring.version>
         <spring.social.twitter>1.0.5.RELEASE</spring.social.twitter>
         <spring.security.version>3.2.4.RELEASE</spring.security.version>
 
         <!--solr-->
-        <solrj.version>4.10.1</solrj.version>
+        <solr>5.2.1</solr>
 
         <!--<db-->
         <oracle.version>11.2.0.1.0</oracle.version>
@@ -62,10 +62,10 @@
         <commons.dbcp.version>1.4</commons.dbcp.version>
 
         <!--spring data jpa-->
-        <spring.data.jpa.version>1.9.4.RELEASE</spring.data.jpa.version>
+        <spring.data.jpa.version>1.10.1.RELEASE</spring.data.jpa.version>
 
         <!--spring data solr-->
-        <spring.data.solr.version>1.5.4.RELEASE</spring.data.solr.version>
+        <spring.data.solr.version>2.0.1.RELEASE</spring.data.solr.version>
 
         <!-- Web -->
         <servlet.version>2.5</servlet.version>
@@ -236,11 +236,25 @@
                 <version>${spring.social.twitter}</version>
             </dependency>
 
+            <!-- Solr core -->
+            <dependency>
+                <groupId>org.apache.solr</groupId>
+                <artifactId>solr-core</artifactId>
+                <version>${solr}</version>
+            </dependency>
+
+            <!-- Solr solrj -->
+            <dependency>
+                <groupId>org.apache.solr</groupId>
+                <artifactId>solr-solrj</artifactId>
+                <version>${solr}</version>
+            </dependency>
+
             <!-- Solr test framework -->
             <dependency>
                 <groupId>org.apache.solr</groupId>
                 <artifactId>solr-test-framework</artifactId>
-                <version>${solrj.version}</version>
+                <version>${solr}</version>
                 <scope>test</scope>
                 <exclusions>
                     <exclusion>
